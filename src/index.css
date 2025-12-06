@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Sophia;
+  src: url("./assets/fonts/Sophia.ttf");
+  font-family: itcbook;
+  src: url("./assets/fonts/CheltenhamStdBook.otf");
+  font-family: itclight;
+  src: url("./assets/fonts/CheltenhamStdLight.otf");
+}
+
+@theme{
+  --font-sophia: Sophia, "serif";
+  --font-itcbook: itcbook, "serif";
+  --font-itclight: itclight, "serif";
+}
