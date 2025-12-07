@@ -1,3 +1,5 @@
+import { InputElement } from "./InputElements";
+
 export function SignUp() {
  return (
   <main className="flex
@@ -58,69 +60,11 @@ export function SignUp() {
 
     <div className="inputs flex gap-6 flex-col w-full">
 
-      <span className="input-container
-      bg-white
-        rounded-full
-        h-15
-        px-8
-        py-9
-        w-full
-        flex
-        flex-row
-        gap-5.75
-        w-full
-        justify-start
-        items-center">
-          <img src="../src/assets/user.svg" alt="name" className="h-5
-          w-5.25"/>
-          <span className="w-0.25 h-9.25 bg-[#f2f2f2]"></span>
-          <input id="text" placeholder="Enter your Name" className="text-black
-          focus:outline-none
-          flex-1"/>
-      </span>
+      <InputElement image={"user.svg"} placeholder={"Enter your name"} />
 
-      <span className="
-        input-container
-      bg-white
-        rounded-full
-        h-15
-        px-8
-        py-9
-        w-full
-        flex
-        flex-row
-        gap-5.75
-        w-full
-        justify-start
-        items-center">
-          <img src="../src/assets/email.svg" alt="Email" className="h-5
-          w-5.25"/>
-          <span className="w-0.25 h-9.25 bg-[#f2f2f2]"></span>
-          <input id="email" type="email" placeholder="Enter your email" className="text-black
-          focus:outline-none
-          flex-1"/>
-      </span>
+      <InputElement image={"email.svg"} placeholder={"Enter your email"} />
 
-      <span className="input-container
-      bg-white
-        rounded-full
-        h-15
-        px-8
-        py-9
-        w-full
-        flex
-        flex-row
-        gap-5.75
-        w-full
-        justify-start
-        items-center">
-          <img src="../src/assets/password.svg" alt="Email" className="h-5
-          w-5.25"/>
-          <span className="w-0.25 h-9.25 bg-[#f2f2f2]"></span>
-          <input id="password" type="password" placeholder="Enter your email" className="text-black
-          focus:outline-none
-          flex-1"/>
-      </span>
+      <InputElement image={"password.svg"} placeholder={"Enter your password"} />
 
     </div>
     </div>
