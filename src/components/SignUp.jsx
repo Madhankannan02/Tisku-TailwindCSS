@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HeroImage } from "./HeroImage";
 import { InputElement } from "./InputElements";
 
@@ -46,7 +47,7 @@ export function SignUp() {
      font-sophia
      font-normal
      text-4xl">
-      Welcome to Fashion
+      Welcome to Tisku
      </p>
      <p className="
      mx-auto
@@ -124,10 +125,10 @@ export function SignUp() {
 
     <p className="font-itclight
     text-3
-    text-black">Already have an account? <span className="font-itcbook
+    text-black">Already have an account? <Link to="/signin"> <span className="font-itcbook
     font-bold
     hover:underline
-    hover:cursor-pointer">Sign In</span></p>
+    hover:cursor-pointer">Sign In</span> </Link></p>
     </div>
 
    </div>
