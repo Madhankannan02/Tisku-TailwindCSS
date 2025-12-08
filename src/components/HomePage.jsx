@@ -60,7 +60,8 @@ export function HomePage(){
 
   </nav>
 
-  <section className="hero pt-5 w-full px-7">
+  <section className="hero pt-5 w-full px-7
+  pb-10">
 
    <div className="hero-upper-part relative">
     <img src="../src/assets/heromain.svg" alt="Main Hero Image" className="w-full" />
@@ -97,6 +98,62 @@ export function HomePage(){
       w-[652px]">Your gateway to the global fashion world—discover top creators, try AI virtual looks, and compare prices instantly.</p>
      </div>
     </div>
+   </div>
+
+   <div className="flex gap-6
+   pt-6">
+
+    <div className="single-part relative">
+     <img src="../src/assets/herodown1.svg" alt="" className=""/>
+     <span className="font-itclight
+     absolute
+     text-l
+     px-3
+     py-1.5
+     bg-neutral-100
+     rounded-full
+     outline-2
+     outline-[#d9dbe9]
+     w-fit
+     left-5
+     top-6
+     ">Discover the visionaries</span>
+    </div>
+
+    <div className="single-part relative">
+     <img src="../src/assets/herodown1.svg" alt="" className=""/>
+     <span className="font-itclight
+     absolute
+     text-l
+     px-3
+     py-1.5
+     bg-neutral-100
+     rounded-full
+     outline-2
+     outline-[#d9dbe9]
+     w-fit
+     left-5
+     top-6
+     ">Discover the visionaried</span>
+    </div>
+
+    <div className="single-part relative">
+     <img src="../src/assets/herodown1.svg" alt="" className=""/>
+     <span className="font-itclight
+     absolute
+     text-l
+     px-3
+     py-1.5
+     bg-neutral-100
+     rounded-full
+     outline-2
+     outline-[#d9dbe9]
+     w-fit
+     left-5
+     top-6
+     ">Discover the visionaried</span>
+    </div>
+
    </div>
 
   </section>
