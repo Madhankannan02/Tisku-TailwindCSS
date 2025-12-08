@@ -64,10 +64,39 @@ export function HomePage(){
 
    <div className="hero-upper-part relative">
     <img src="../src/assets/heromain.svg" alt="Main Hero Image" className="w-full" />
-    <span className="font-itclight
-    text-sm
-    px-3
-    pt-1.5">Your Personalized Fashion Feed</span>
+
+    <div className="flex
+    absolute
+    left-20
+    top-32
+    flex-col
+    gap-12
+    ">
+     <span className="font-itclight
+     text-l
+     px-3
+     py-1.5
+     bg-neutral-100
+     rounded-full
+     outline-2
+     outline-[#d9dbe9]
+     w-fit
+     ">Your Personalized Fashion Feed</span>
+
+     <div className="flex flex-col gap-2">
+      <h1 className="font-sophia
+      font-bold
+      text-5xl
+      text-black
+      w-[687px]
+      leading-normal">Achieve Your Vision. Connect. Compare. Create.</h1>
+
+      <p className="font-itcbook
+      text-lg
+      text-black
+      w-[652px]">Your gateway to the global fashion world—discover top creators, try AI virtual looks, and compare prices instantly.</p>
+     </div>
+    </div>
    </div>
 
   </section>
