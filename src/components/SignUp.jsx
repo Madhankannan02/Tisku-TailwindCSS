@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { HeroImage } from "./HeroImage";
 import { InputElement } from "./InputElements";
+import { HomePage } from './Homepage'
+import { useNavigate } from "react-router-dom";
 
 export function SignUp() {
+  const navigate = useNavigate();
  return (
   <main className="flex
   px-8
@@ -98,7 +101,7 @@ export function SignUp() {
       rounded-full
       font-itcbook
       text-xl
-      cursor-pointer">Sign Up</button>
+      cursor-pointer" onClick={()=>navigate("/homepage")}>Sign Up</button>
 
       <span className="w-full
       bg-black

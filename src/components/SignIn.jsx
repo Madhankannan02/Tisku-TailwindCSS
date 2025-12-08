@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { HeroImage } from "./HeroImage";
+import { HomePage } from "./HomePage";
 import { InputElement } from "./InputElements";
+import { useNavigate } from "react-router-dom";
 
 export function SignIn(){
+ const navigate = useNavigate();
  return(
   <main className="flex
     px-8
@@ -96,7 +99,7 @@ export function SignIn(){
         rounded-full
         font-itcbook
         text-xl
-        cursor-pointer">Sign In</button>
+        cursor-pointer" onClick={()=>navigate("/homepage")}>Sign In</button>
   
         <span className="w-full
         bg-black
