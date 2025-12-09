@@ -116,7 +116,50 @@ export function HomePage(){
 
    </span>
 
-   <span></span>
+  </section>
+
+  <section className="collaborator
+  pt-5
+  w-full
+  px-7
+  pb-10">
+
+   <div className="flex flex-col
+   flex-start
+   gap-5">
+    <span className="font-sophia
+    font-bold
+    text-4xl">Meet Your Next Collaborator</span>
+
+    <p className="font-itcbook
+    text-lg">Discover top fashion creators—filter by expertise, style, location, and pricing to find professionals who align with your creative vision.</p>
+
+    <button className="px-4
+    py-2.5
+    bg-black
+    rounded-full
+    text-white
+    flex
+    flex-row
+    gap-2.5
+    font-itcbook
+    text-3.5
+    items-center
+    w-fit
+    ">Find Your Fashion Collaborator Today
+    <span className="bg-white
+    flex
+    justify-center
+    items-center
+    rounded-full
+    w-9
+    h-9">
+    <img src="../src/assets/arrowlight.svg" alt="" className="
+         h-2.8
+         w-3"/> 
+    </span>
+    </button>
+   </div>
 
   </section>
 
