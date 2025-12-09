@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HeroBottomCard } from "./HeroBottomCard";
 
 export function HomePage(){
  return(
@@ -100,61 +101,20 @@ export function HomePage(){
     </div>
    </div>
 
-   <div className="flex gap-6
-   pt-6">
+   <span className="flex
+   hero-bottom-card
+   gap-6
+   pt-6
+   w-full
+   overflow-hidden">
 
-    <div className="single-part relative">
-     <img src="../src/assets/herodown1.svg" alt="" className=""/>
-     <span className="font-itclight
-     absolute
-     text-l
-     px-3
-     py-1.5
-     bg-neutral-100
-     rounded-full
-     outline-2
-     outline-[#d9dbe9]
-     w-fit
-     left-5
-     top-6
-     ">Discover the visionaries</span>
-    </div>
+    <HeroBottomCard image={"herodown1.svg"} name={"Find Your Creator"} title={"Discover the Visionaries"}/>
 
-    <div className="single-part relative">
-     <img src="../src/assets/herodown1.svg" alt="" className=""/>
-     <span className="font-itclight
-     absolute
-     text-l
-     px-3
-     py-1.5
-     bg-neutral-100
-     rounded-full
-     outline-2
-     outline-[#d9dbe9]
-     w-fit
-     left-5
-     top-6
-     ">Discover the visionaried</span>
-    </div>
+    <HeroBottomCard image={"herodown2.svg"} name={"Find Your Creator"} title={"Discover the Visionaries"}/>
+    
+    <HeroBottomCard image={"herodown3.svg"} name={"Find Your Creator"} title={"Discover the Visionaries"}/>
 
-    <div className="single-part relative">
-     <img src="../src/assets/herodown1.svg" alt="" className=""/>
-     <span className="font-itclight
-     absolute
-     text-l
-     px-3
-     py-1.5
-     bg-neutral-100
-     rounded-full
-     outline-2
-     outline-[#d9dbe9]
-     w-fit
-     left-5
-     top-6
-     ">Discover the visionaried</span>
-    </div>
-
-   </div>
+   </span>
 
   </section>
 
