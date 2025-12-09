@@ -6,6 +6,7 @@ export function HeroBottomCard({ image, name, title}){
      hover:flex-[1.6]
      h-[270px]
      relative
+     group
      ">
       <span className="w-full
       h-19
@@ -14,7 +15,7 @@ export function HeroBottomCard({ image, name, title}){
       rounded-br-[27px]
       bottom-0
       bg-gradient-to-t from-[#D4CBAC] to-[#CFCCC3]/0"></span>
-     <img
+      <img
        src={`../src/assets/${image}`}
        alt=""
        className="
@@ -22,7 +23,7 @@ export function HeroBottomCard({ image, name, title}){
          w-full
          object-cover
          transition-all
-         duration-1000
+         duration-300
          rounded-[27px]
          hover:rounded-[27px]
        "/>
@@ -40,15 +41,27 @@ export function HeroBottomCard({ image, name, title}){
           w-fit
           left-5
           top-6
+          text-neutral-700
+          transition-colors
+          duration-colors
+          group-hover:text-neutral-100
+          group-hover:bg-black
+          transition-colors
+          duration-300
          ">
          {title}
        </span>
        <span className="font-itcbook
-       text-xl
-       text-white
-       absolute
-       left-5
-       bottom-7">{name}</span>
+        text-xl
+        text-white
+        absolute
+        left-5
+        bottom-7
+        text-white
+        duration-300
+        group-hover:text-black">
+        {name}
+        </span>
 
        <div className="flex
        items-center
@@ -61,10 +74,27 @@ export function HeroBottomCard({ image, name, title}){
        outline-[#b3b3b3]/40
        absolute
        top-5
-       right-5">
+       right-5
+       group-hover:bg-black
+       transition-colors
+       duration-300">
         <img src="../src/assets/arrowlight.svg" alt="Small arrow" className="
+         absolute
          h-2.8
-         w-3" />
+         w-3
+         transition-opacity
+         duration-300
+         opacity-100
+         group-hover:opacity-0" />
+
+         <img src="../src/assets/arrowlighthover.svg" alt="Small arrow" className="
+         absolute
+         h-2.8
+         w-3
+         transition-opacity
+         duration-300
+         opacity-0
+         group-hover:opacity-100" />
        </div>
     </div>
  );

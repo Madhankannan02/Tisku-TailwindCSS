@@ -101,8 +101,8 @@ export function HomePage(){
     </div>
    </div>
 
-   <span className="flex
-   hero-bottom-card
+   <span className="hero-bottom-card
+   flex
    gap-6
    pt-6
    w-full
@@ -115,6 +115,8 @@ export function HomePage(){
     <HeroBottomCard image={"herodown3.svg"} name={"Find Your Creator"} title={"Discover the Visionaries"}/>
 
    </span>
+
+   <span></span>
 
   </section>
 
