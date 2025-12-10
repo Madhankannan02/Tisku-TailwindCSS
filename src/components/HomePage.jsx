@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { HeroSection } from "./HeroSection";
 import { Collaborator } from "./Collaborator";
+import { AiStudio } from "./AiStudio";
 
 export function HomePage(){
  return(
@@ -63,6 +64,7 @@ export function HomePage(){
 
   <HeroSection />
   <Collaborator />
+  <AiStudio />
 
   </>
  );
