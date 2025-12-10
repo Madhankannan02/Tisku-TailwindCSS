@@ -1,3 +1,5 @@
+import { ChipTitle } from "./ChipTitle";
+
 export function HeroBottomCard({ image, name, title}){
  return(
   <div className="
@@ -27,30 +29,7 @@ export function HeroBottomCard({ image, name, title}){
          rounded-[27px]
          hover:rounded-[27px]
        "/>
-       <span
-         className="
-          font-itclight
-          absolute
-          text-sm
-          px-3
-          py-1.5
-          bg-neutral-100
-          rounded-full
-          outline-2
-          outline-[#d9dbe9]
-          w-fit
-          left-5
-          top-6
-          text-neutral-700
-          transition-colors
-          duration-colors
-          group-hover:text-neutral-100
-          group-hover:bg-black
-          transition-colors
-          duration-300
-         ">
-         {title}
-       </span>
+       <ChipTitle title={title} />
        <span className="font-itcbook
         text-xl
         text-white

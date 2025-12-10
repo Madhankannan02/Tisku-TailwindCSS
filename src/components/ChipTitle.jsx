@@ -1,0 +1,28 @@
+export function ChipTitle({ title }){
+ return(
+  <span
+   className="
+    font-itclight
+    absolute
+    text-sm
+    px-3
+    py-1.5
+    bg-neutral-100
+    rounded-full
+    outline-2
+    outline-[#d9dbe9]
+    w-fit
+    left-5
+    top-6
+    text-neutral-700
+    transition-colors
+    duration-colors
+    group-hover:text-neutral-100
+    group-hover:bg-black
+    transition-colors
+    duration-300
+   ">
+   {title}
+  </span>
+ );
+}

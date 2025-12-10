@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { HeroBottomCard } from "./HeroBottomCard";
+import { ChipTitle } from "./ChipTitle";
+import { ChipTitleBottom } from "./ChipTitleBottom";
 
 export function HomePage(){
  return(
@@ -9,8 +11,7 @@ export function HomePage(){
   flex
   w-full
   items-center
-  flex
-  border-b-1
+  border-b-
   border-neutral-100
   ">
 
@@ -22,7 +23,7 @@ export function HomePage(){
     bg-neutral-100
     outline-1
     outline-neutral-400
-    rounded-[16px]
+    rounded-2xl
     w-[340px]
     h-[52px]
     px-4
@@ -48,14 +49,14 @@ export function HomePage(){
     justify-end">
      <Link to="/homepage" className="text-black opacity-[100%] underline">Home</Link>
      <Link className="
-    opacity-[63%]">Creators</Link>
+    opacity-63">Creators</Link>
      <Link className="
-    opacity-[63%]">AI Studio</Link>
+    opacity-63">AI Studio</Link>
      <Link className="
-    opacity-[63%]">Price Compare</Link>
+    opacity-63">Price Compare</Link>
      <Link className="flex justify-center gap-1 
-    opacity-[63%]">My Profile <img src="../src/assets/downarrow.svg" className="
-    opacity-[63%]" /></Link>
+    opacity-63">My Profile <img src="../src/assets/downarrow.svg" className="
+    opacity-63" /></Link>
     </div>
    </div>
 
@@ -120,13 +121,17 @@ export function HomePage(){
 
   <section className="collaborator
   pt-5
-  w-full
   px-7
-  pb-10">
+  pb-10
+  flex
+  flex-row
+  gap-18">
 
-   <div className="flex flex-col
+   <div className="flex
+   flex-col
    flex-start
-   gap-5">
+   gap-6
+   w-100">
     <span className="font-sophia
     font-bold
     text-4xl">Meet Your Next Collaborator</span>
@@ -146,7 +151,7 @@ export function HomePage(){
     text-3.5
     items-center
     w-fit
-    ">Find Your Fashion Collaborator Today
+    leading-loose">Find Your Fashion Collaborator Today
     <span className="bg-white
     flex
     justify-center
@@ -159,6 +164,50 @@ export function HomePage(){
          w-3"/> 
     </span>
     </button>
+   </div>
+
+   <div className="flex
+   flex-1
+   justify-between
+   gap-7
+   w-full">
+     <div className="
+     relative">
+          <img src="../src/assets/collaborator1.png" alt="" className="
+          rounded-7
+          w-full"/>
+          <p className="absolute
+          bottom-14
+          left-4
+          font-itcbook
+          text-2xl
+          text-white">Fashion Designers</p>
+          <ChipTitleBottom title={"Find Designers"} />
+     </div>
+     <div className="
+     relative">
+          <img src="../src/assets/collaborator2.png" alt="" className="w-full
+          rounded-7"/>
+          <p className="absolute
+          bottom-14
+          left-4
+          font-itcbook
+          text-2xl
+          text-white">Makeup Artists</p>
+          <ChipTitleBottom title={"Find an Artists"} />
+     </div>
+     <div className="
+     relative">
+          <img src="../src/assets/collaborator3.png" alt="" className="w-full
+          rounded-7"/>
+          <p className="absolute
+          bottom-14
+          left-4
+          font-itcbook
+          text-2xl
+          text-white">Fashion Stylists </p>
+          <ChipTitleBottom title={"Find Designers"} />
+     </div>
    </div>
 
   </section>
